@@ -17,9 +17,17 @@ public class AppTest
 		insertarE.sendKeys("sfadmin");
 		WebElement insertarP = driver.findElement(By.id("__input2-inner"));
 		insertarP.sendKeys("part1705DC4");
-		WebElement button = driver.findElement(By.id("__button2-content"));
-		button.click();
+		
+		
 		
 
+	}
+	public void Complemento(WebDriver driver) {
+		WebElement button = driver.findElement(By.id("__button2-content"));
+		button.click();
+		WebElement Desarrollo = driver.findElement(By.xpath("//div[contains(@class,'admLinksSprite dev')]"));
+		Desarrollo.click();
+		WebElement Gestion = driver.findElement(By.xpath("//a[@id='94_']"));
+		Gestion.click();
 	}
 }
